@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <title>adresse</title>
+</head>
+<body style="color: black">
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4"style="text-align: center">Meteo</h1>
+    </div>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-6">
+    <form action="#" th:action="@{/meteo}"  th:object="${adresse}" method="post">
+        <div class="mb-3" >
+        <label for="adresse" class="form-label">Entrez l'adresse</label>
+        <input name="getadresse" id="adresse" type="text" class="form-control" th:field="*{adressePart2}" >
+        </div>
+        <div class="mb-3">
+        <label for="codePostal" class="form-label">Entrez le code postal</label>
+        <input name="codePostal" id="codePostal" type="text" class="form-control" th:field="*{codePostal}">
+        </div>
+       <button type="submit" name="valider" class="btn btn-dark" value="valider" style="margin: 30px 0 0 250px">Get the weather at the given adresse!</button>
+
+</form>
+    </div>
+</div>
+</body>
+</html>
