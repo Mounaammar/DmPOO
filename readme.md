@@ -2,15 +2,20 @@ TP DM noté 1/2 : Utilisation d’API web avec Spring Boot
 
 Spring-boot-devTools:
 Le module spring-boot-devtools inclut un serveur LiveReload intégré, utilisé pour déclencher l'actualisation du navigateur lorsqu'une ressource est modifiée.
+
 Spring Web:
 Il propose des fonctionnalités de base pour les développements web (initialisation du conteneur, gestion des contextes, support multipart, extraction des paramètres d'une requête http, ...) Spring Web-Servlet : framework pour le développement d'applications qui met en oeuvre le motif de conception MVC.
+
 Spring Data JPA:
 Spring Data JPA est un autre framework de Spring qui facilite grandement l'utilisation de JPA. Il va nous permettre de générer toutes sortes d'opérations vers la base de données, sans que nous ayons à écrire la moindre requête, ni même la moindre implémentation DAO.
+
 H2 Database:
 H2 est un système de gestion de base de données relationnelle open source créé entièrement en Java. Il peut être intégré dans des applications Java ou s'exécuter en mode client-serveur.
+
 Thymeleaf:
 Thymeleaf est un moteur de modèle Java moderne côté serveur permettant de traiter et de créer du HTML, XML, JavaScript, CSS et du texte brut.
 Il permet d’afficher correctement le HTML dans les navigateurs et en tant que prototypes statiques
+
 Hibernate:
 Etablir la connexion avec la database h2
 
